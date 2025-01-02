@@ -17,6 +17,7 @@ struct StartView: View {
                 .font(.system(size: 50).bold())
                 .foregroundStyle(.originalBlue)
                 .stroke(color: .originalWhite, width: 2)
+                .multilineTextAlignment(.center)
             Spacer()
             Button {
                 isShowingQuizView = true

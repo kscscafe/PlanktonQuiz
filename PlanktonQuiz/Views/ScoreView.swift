@@ -16,7 +16,7 @@ struct ScoreView: View {
             Text(scoreText)
                 .font(.system(size: 40).bold())
                 .foregroundStyle(.originalBlue)
-                .stroke(color: .originalWhite, width: 5)
+                .stroke(color: .originalWhite, width: 2)
             Spacer()
             Button {
                 let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene

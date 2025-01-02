@@ -1,3 +1,11 @@
+//
+//  QuizData.swift
+//  PlanktonQuiz
+//
+//  Created by 杉崎康隆 on 2025/01/01.
+//
+
+
 struct QuizData {
     static let quizItems = [
         QuizItem(

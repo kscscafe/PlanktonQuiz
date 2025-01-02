@@ -6,17 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F11F1C992D25384600A1DE10 /* PlanktonQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1C8B2D25384600A1DE10 /* PlanktonQuizApp.swift */; };
+		F11F1C9A2D25384600A1DE10 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1C8E2D25384600A1DE10 /* View+.swift */; };
+		F11F1C9B2D25384600A1DE10 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1C922D25384600A1DE10 /* QuizView.swift */; };
+		F11F1C9C2D25384600A1DE10 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1C932D25384600A1DE10 /* ScoreView.swift */; };
+		F11F1C9D2D25384600A1DE10 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1C942D25384600A1DE10 /* StartView.swift */; };
+		F11F1C9E2D25384600A1DE10 /* StrokeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1C952D25384600A1DE10 /* StrokeBackground.swift */; };
+		F11F1C9F2D25384600A1DE10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11F1C902D25384600A1DE10 /* Preview Assets.xcassets */; };
+		F11F1CA02D25384600A1DE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11F1C972D25384600A1DE10 /* Assets.xcassets */; };
+		F11F1CA22D25398E00A1DE10 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11F1CA12D25398E00A1DE10 /* QuizData.swift */; };
+		F11F1CA52D2560B300A1DE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11F1CA42D2560B300A1DE10 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F11F1C6A2D24FE1F00A1DE10 /* PlanktonQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanktonQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11F1C8B2D25384600A1DE10 /* PlanktonQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanktonQuizApp.swift; sourceTree = "<group>"; };
+		F11F1C8E2D25384600A1DE10 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		F11F1C902D25384600A1DE10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F11F1C922D25384600A1DE10 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		F11F1C932D25384600A1DE10 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		F11F1C942D25384600A1DE10 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		F11F1C952D25384600A1DE10 /* StrokeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBackground.swift; sourceTree = "<group>"; };
+		F11F1C972D25384600A1DE10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F11F1CA12D25398E00A1DE10 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		F11F1CA42D2560B300A1DE10 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F11F1CAA2D258B0300A1DE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F11F1C6C2D24FE1F00A1DE10 /* PlanktonQuiz */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PlanktonQuiz;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F11F1C672D24FE1F00A1DE10 /* Frameworks */ = {
@@ -32,7 +48,7 @@
 		F11F1C612D24FE1E00A1DE10 = {
 			isa = PBXGroup;
 			children = (
-				F11F1C6C2D24FE1F00A1DE10 /* PlanktonQuiz */,
+				F11F1C982D25384600A1DE10 /* PlanktonQuiz */,
 				F11F1C6B2D24FE1F00A1DE10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +59,72 @@
 				F11F1C6A2D24FE1F00A1DE10 /* PlanktonQuiz.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F11F1C8C2D25384600A1DE10 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1C8B2D25384600A1DE10 /* PlanktonQuizApp.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		F11F1C8D2D25384600A1DE10 /* ConstantData */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1CA12D25398E00A1DE10 /* QuizData.swift */,
+			);
+			path = ConstantData;
+			sourceTree = "<group>";
+		};
+		F11F1C8F2D25384600A1DE10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1C8E2D25384600A1DE10 /* View+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F11F1C912D25384600A1DE10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1C902D25384600A1DE10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F11F1C962D25384600A1DE10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1C922D25384600A1DE10 /* QuizView.swift */,
+				F11F1C932D25384600A1DE10 /* ScoreView.swift */,
+				F11F1C942D25384600A1DE10 /* StartView.swift */,
+				F11F1C952D25384600A1DE10 /* StrokeBackground.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F11F1C982D25384600A1DE10 /* PlanktonQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1CAA2D258B0300A1DE10 /* Info.plist */,
+				F11F1C8C2D25384600A1DE10 /* Apps */,
+				F11F1C962D25384600A1DE10 /* Views */,
+				F11F1C8F2D25384600A1DE10 /* Extensions */,
+				F11F1C8D2D25384600A1DE10 /* ConstantData */,
+				F11F1CA32D25604B00A1DE10 /* Storyboards */,
+				F11F1C912D25384600A1DE10 /* Preview Content */,
+				F11F1C972D25384600A1DE10 /* Assets.xcassets */,
+			);
+			path = PlanktonQuiz;
+			sourceTree = "<group>";
+		};
+		F11F1CA32D25604B00A1DE10 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F11F1CA42D2560B300A1DE10 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F11F1C6C2D24FE1F00A1DE10 /* PlanktonQuiz */,
 			);
 			name = PlanktonQuiz;
 			packageProductDependencies = (
@@ -109,6 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11F1CA52D2560B300A1DE10 /* LaunchScreen.storyboard in Resources */,
+				F11F1C9F2D25384600A1DE10 /* Preview Assets.xcassets in Resources */,
+				F11F1CA02D25384600A1DE10 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11F1CA22D25398E00A1DE10 /* QuizData.swift in Sources */,
+				F11F1C992D25384600A1DE10 /* PlanktonQuizApp.swift in Sources */,
+				F11F1C9A2D25384600A1DE10 /* View+.swift in Sources */,
+				F11F1C9B2D25384600A1DE10 /* QuizView.swift in Sources */,
+				F11F1C9C2D25384600A1DE10 /* ScoreView.swift in Sources */,
+				F11F1C9D2D25384600A1DE10 /* StartView.swift in Sources */,
+				F11F1C9E2D25384600A1DE10 /* StrokeBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,21 +339,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"PlanktonQuiz/Preview Content\"";
 				DEVELOPMENT_TEAM = 6736RV7AWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanktonQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "プランクトンクイズ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kscscafe.PlanktonQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -279,21 +374,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"PlanktonQuiz/Preview Content\"";
 				DEVELOPMENT_TEAM = 6736RV7AWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanktonQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "プランクトンクイズ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kscscafe.PlanktonQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

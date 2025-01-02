@@ -20,35 +20,8 @@ struct QuizView: View {
     @State var currentQuestionIndex = 0
     @State var correctCount = 0
     
-    let choices = ["イカダモ","アメーバ","アオミドロ","ボルボックス"]
-    
-    let quizItems = [
-        QuizItem(
-            question:"次のうち、植物と動物の両方の性質を持つプランクトンは？",
-            choices: ["イカダモ","アメーバ","アオミドロ","ボルボックス"],
-            correctAnswer: "ボルボックス"
-        ),
-        QuizItem(
-            question: "次のうち、分裂をして増えるプランクトンは？",
-            choices: ["ハネケイソウ", "アメーバ", "ミカヅキモ", "アオミドロ"],
-            correctAnswer: "アメーバ"
-        ),
-        QuizItem(
-            question: "次のうち、光合成をするプランクトンは？",
-            choices: ["ゾウリムシ", "ミジンコ","ワムシ", "アオミドロ"],
-            correctAnswer: "アオミドロ"
-        ),
-        QuizItem(
-            question: "次のうち、べん毛やせん毛を持つプランクトンは？",
-            choices: ["ミドリムシ", "イカダモ", "ハネケイソウ", "ミカヅキモ"],
-            correctAnswer: "ミドリムシ"
-        ),
-        QuizItem(
-            question: "次のうち、多細胞生物なのはどれ？",
-            choices: ["ワムシ", "アオミドロ", "ボルボックス", "クンショウモ"],
-            correctAnswer: "ワムシ"
-        )
-    ]
+    let quizItems = QuizData.quizItems
+
     var body: some View {
         ZStack {
             VStack {
@@ -69,15 +42,10 @@ struct QuizView: View {
                     .frame(maxHeight: .infinity)
                 ForEach(quizItems[currentQuestionIndex].choices, id: \.self) { choice in
                     Button {
-                        print("\(choice)を選択しました。")
-                        print("正解は\(quizItems[currentQuestionIndex].correctAnswer)でした。")
-                        
                         if choice == quizItems[currentQuestionIndex].correctAnswer {
-                            print("正解です。")
                             correctCount += 1
                             isAnswerCorrect = true
                         } else {
-                            print("不正解です。")
                             isAnswerCorrect = false
                         }
                         
