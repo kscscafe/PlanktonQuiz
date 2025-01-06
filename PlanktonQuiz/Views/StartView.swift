@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
-    @State var isShowingQuizView = false
+    @State var isShowingGenreSelectionView = false
     
     var body: some View {
         VStack {
@@ -20,15 +20,15 @@ struct StartView: View {
                 .multilineTextAlignment(.center)
             Spacer()
             Button {
-                isShowingQuizView = true
+                isShowingGenreSelectionView = true
             } label: {
                 Image(.startButton)
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: .infinity)
             }
-            .fullScreenCover(isPresented: $isShowingQuizView) {
-                QuizView()
+            .fullScreenCover(isPresented: $isShowingGenreSelectionView) {
+                GenreSelectionView()
             }
         }
         .padding()

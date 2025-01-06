@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct QuizItem {
-    let question: String
-    var choices: [String]
-    let correctAnswer: String
-}
-
 struct QuizView: View {
     @State var isShowingScoreView = false
     @State var isShowingResultSymbol = false
@@ -20,7 +14,7 @@ struct QuizView: View {
     @State var currentQuestionIndex = 0
     @State var correctCount = 0
     
-    let quizItems = QuizData.quizItems
+    @Binding var quizItems: [QuizItem]
 
     var body: some View {
         ZStack {
@@ -31,15 +25,22 @@ struct QuizView: View {
                     .background(.originalBlue)
                     .foregroundStyle(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
-                Text(quizItems[currentQuestionIndex].question)
-                    .font(.title)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.originalLightBlue)
-                    .overlay(RoundedRectangle(cornerRadius: 10)
-                        .stroke(.originalBlue, lineWidth: 5)
-                    )
-                    .frame(maxHeight: .infinity)
+                VStack {
+                    Text(quizItems[currentQuestionIndex].question)
+                        .font(.title)
+                    quizItems[currentQuestionIndex].questionImage?
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 200, height: 200)
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.originalLightBlue.clipShape(RoundedRectangle(cornerRadius: 10)))
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(.originalBlue, lineWidth: 5)
+                )
+                .frame(maxHeight: .infinity)
+                    
                 ForEach(quizItems[currentQuestionIndex].choices, id: \.self) { choice in
                     Button {
                         if choice == quizItems[currentQuestionIndex].correctAnswer {
@@ -89,5 +90,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView()
+    QuizView(quizItems: .constant(QuizData.knowledgeQuestions))
 }
